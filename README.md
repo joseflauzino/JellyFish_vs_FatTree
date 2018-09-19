@@ -2,7 +2,14 @@
 ## Por: José Flauzino
 
 Neste repositório você encontra meus códigos para executar os experimentos que reproduzem a Figura 9 e Tabela 1 do artigo "Jellyfish: Networking Data Centers Randomly".
-Saiba mais sobre os objetivos e motivações na <a href="https://github.com/joseflauzino/JellyFish_vs_FatTree/wiki">wiki</a> 
+Saiba mais sobre os objetivos e motivações na <a href="https://github.com/joseflauzino/JellyFish_vs_FatTree/wiki">Wiki do Projeto</a> 
+
+## Obtendo os códigos
+1. Verifique se em seu sistema o prgrama git já está instalado com o comando `git`. Caso apareça as informações de ajuda do git é sinal que ele está instalado, caso contrário use o comando a seguir para fazer a instalação: `sudo apt-get update && apt-get install git`.
+
+2. Crie ou escolha um diretório do seu sistema para armazenar os arquivos e entre neste diretório.
+
+3. Faça o clone do repositório no diretório escolhido com o comando `git clone https://github.com/joseflauzino/JellyFish_vs_FatTree`.
 
 ## Instalação de pacotes necessários
 1. Execute `bash setup.sh` para instalar o Ripl e Riplpox
@@ -14,8 +21,9 @@ Saiba mais sobre os objetivos e motivações na <a href="https://github.com/jose
 3. Ao término do processamento a figura estará no diretório /graphics com o nome de acordo com os parâmetros usados no comando. Por exemplo, se o comando foi idêntico ao exemplo do passo 2 o nome da figura será plot_10sw_3ports_4servers. 
 
 <img src="plot_3sw_2ports_4servers.png" width="450" ></img>
-### Possíveis erros
 
-### Observações:
+### Possíveis erros
+Para ver as soluções de principais erros que podem ocorrer acesse a página de <a href="https://github.com/joseflauzino/JellyFish_vs_FatTree/wiki">possíveis erros</a> na wiki do projeto.
 
 ## Para reproduzir a Tabela 1
+Desenvolvimento em andamento.
