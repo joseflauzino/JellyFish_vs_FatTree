@@ -1,5 +1,11 @@
-import pickle
-import pdb
+import pickle, pdb
+
+def transform_routes():
+	print "---- Transforming routes for Ripl/Riplpox use ----"
+	transformed_ksp_routes = transform_paths_dpid("ksp_%s" % (file_name), num_servers, 8)
+	save_routing_table(transformed_ksp_routes, "ksp_%s" % (file_name))
+	transformed_ecmp_routes = transform_paths_dpid("ecmp_%s" % (file_name), num_servers, 8)
+	save_routing_table(transformed_ecmp_routes, "ecmp_8_%s" % (file_name))
 
 def save_routing_table(obj, name):
     with open('transformed_routes/'+ name + '.pkl', 'wb') as f:
@@ -33,7 +39,6 @@ def create_routing_table(paths_file_name, numSwitches):
 		    if dst_src_pair not in table[str(currentNode)]:
                         table[str(currentNode)][dst_src_pair] = {}
                     table[str(currentNode)][dst_src_pair][str(pathId)] = str(nextHop)
-	    
 	return table
 
 def transform_paths_dpid(paths_file_name, numSwitches, maxLen):

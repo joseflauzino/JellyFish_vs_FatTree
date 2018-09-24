@@ -1,5 +1,5 @@
-# Experimento: JellyFish vs Fat Tree
-## Por: José Flauzino
+# Experimento: JelyFish vs Fat Tree
+### Dsenvolvido por: José Flauzino
 
 Neste repositório você encontra meus códigos para executar os experimentos que reproduzem a Figura 9 e Tabela 1 do artigo "Jellyfish: Networking Data Centers Randomly".
 Saiba mais sobre os objetivos e motivações na <a href="https://github.com/joseflauzino/JellyFish_vs_FatTree/wiki">Wiki do Projeto</a> 
