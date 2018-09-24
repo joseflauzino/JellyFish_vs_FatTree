@@ -3,10 +3,10 @@ import networkx as nx, matplotlib.pyplot as plot
 from itertools import islice
 from itertools import permutations
 
-def draw_graph(G):
+def draw_graph(G,file_name):
 	plot.subplot(111)
 	nx.draw_networkx(G, node_size=10, node_color='b',with_labels=False)
-	plot.savefig("graphs_figures/graph.png")
+	plot.savefig("graphs_figures/%s.png" % file_name)
 
 def ecmp_paths(G, num_switches):
 	list_ecmp = {}

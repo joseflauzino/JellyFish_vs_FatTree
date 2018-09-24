@@ -10,11 +10,11 @@ def main():
 
 		list_ecmp = {}
 		list_ksp = {}
-		file_name = "%ssw_%slinks_%sservers" % (num_switches, num_links, num_servers)
+		file_name = "%ssw_%slinks_%shosts" % (num_switches, num_links, num_servers)
 		
 		print "---- Creating the network ----"
 		G = nx.random_regular_graph(num_links, num_switches)
-		draw_graph(G)
+		draw_graph(G,file_name)
 		adj_list_file_name = "adj_list/adjList_"+file_name
 		nx.write_adjlist(G, adj_list_file_name)
 		G = nx.read_adjlist(adj_list_file_name)
