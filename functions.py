@@ -93,7 +93,7 @@ def make_graphic(num_paths, file_name):
 	axes.set_ylabel("# Distinct Paths Link is on")
 
 	plot.legend(loc="upper left")
-	plot.savefig("graphics/plot_%s.png" % file_name)
+	plot.savefig("graphics/%s.png" % file_name)
 	    
 def save_file(data, name):
     with open('routes/routes_'+ name + '.pkl', 'wb') as file:
