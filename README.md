@@ -20,7 +20,7 @@ Saiba mais sobre os objetivos e motivações na <a href="https://github.com/jose
 2. Exemplo de comando: `python main.py 10 3 4`. Neste caso a rede criada terá 10 switches com 3 conexões cada e 4 hosts na rede.
 3. Ao término do processamento a figura estará no diretório /graphics com o nome de acordo com os parâmetros usados no comando. Por exemplo, se o comando foi idêntico ao exemplo do passo 2 o nome da figura será 10sw_3links_4hosts.png. 
 
-<img src="10sw_3links_4hosts.png" width="450" ></img>
+<img src="graphics/10sw_3links_4hosts.png" width="450" ></img>
 
 ### Possíveis erros
 Para ver as soluções de principais erros que podem ocorrer acesse a página de <a href="https://github.com/joseflauzino/JellyFish_vs_FatTree/wiki">possíveis erros</a> na wiki do projeto.
