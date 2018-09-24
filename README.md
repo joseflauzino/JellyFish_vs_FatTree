@@ -16,14 +16,14 @@ Saiba mais sobre os objetivos e motivações na <a href="https://github.com/jose
 
 ## Para reproduzir a Figura 9
 
-1. Execute `python main.py [N_SWICTHES] [N_LINKS] [N_SERVERS]`, onde [N_SWITCHES] deve ser substituido pelo número de swicthes a rede deve ter, [N_LINKS] é a quantidade de links que cada swicth deve conter e, por fim, [N_SERVERS] é a quantidade de hosts da rede.
+1. Execute `python main.py [N_SWICTHES] [N_LINKS] [N_HOSTS]`, onde [N_SWITCHES] deve ser substituido pelo número de swicthes a rede deve ter, [N_LINKS] é a quantidade de links que cada swicth deve conter e, por fim, [N_HOSTS] é a quantidade de hosts da rede.
 2. Exemplo de comando: `python main.py 10 3 4`. Neste caso a rede criada terá 10 switches com 3 conexões cada e 4 hosts na rede.
 3. Ao término do processamento a figura estará no diretório /graphics com o nome de acordo com os parâmetros usados no comando. Por exemplo, se o comando foi idêntico ao exemplo do passo 2 o nome da figura será 10sw_3links_4hosts.png. 
 
 <img src="graphics/10sw_3links_4hosts.png" width="450" ></img>
 
 ### Possíveis erros
-Para ver as soluções de principais erros que podem ocorrer acesse a página de <a href="https://github.com/joseflauzino/JellyFish_vs_FatTree/wiki">possíveis erros</a> na wiki do projeto.
+Para ver as soluções de principais erros que podem ocorrer acesse a página de <a href="https://github.com/joseflauzino/JellyFish_vs_FatTree/wiki">Solução de Possíveis Erros</a> na wiki do projeto.
 
 ## Para reproduzir a Tabela 1
 Desenvolvimento em andamento.
