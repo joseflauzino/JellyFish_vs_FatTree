@@ -23,7 +23,7 @@ Saiba mais sobre os objetivos e motivações na <a href="https://github.com/jose
 <img src="graphics/10sw_3links_4hosts.png" width="450" ></img>
 
 ### Possíveis erros
-Para ver as soluções de principais erros que podem ocorrer acesse a página de <a href="https://github.com/joseflauzino/JellyFish_vs_FatTree/wiki">Solução de Possíveis Erros</a> na wiki do projeto.
+Para ver as soluções de principais erros que podem ocorrer acesse a página de <a href="https://github.com/joseflauzino/JellyFish_vs_FatTree/wiki/Solu%C3%A7ao-de-Poss%C3%ADveis-Erros">Solução de Possíveis Erros</a> na wiki do projeto.
 
 ## Para reproduzir a Tabela 1
 Desenvolvimento em andamento.
