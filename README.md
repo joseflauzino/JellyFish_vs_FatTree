@@ -28,8 +28,8 @@ Para ver as soluções de principais erros que podem ocorrer acesse a página de
 ## Para reproduzir a Tabela 1
 1. Execute o seguinte comando: `pox/pox.py riplpox.riplpox --topo=jelly,[N_SWITCHES],[N_PORTS],[ADJ_LIST_FILE] --routing=jelly,[ROUTING_FILE] --mode=reactive`
 
-Exemplo de comando para 10 switches com 3 portas cada, lista de adjacencia chamada 'adjList_3links_10sw' e arquivo de rotas chamado 'ecmp_8_3links_10sw'
-`pox/pox.py riplpox.riplpox --topo=jelly,10,3,adjList_3links_10sw --routing=jelly,ecmp_8_3links_10sw --mode=reactive`
+	Exemplo de comando para 10 switches com 3 portas cada, lista de adjacencia chamada 'adjList_3links_10sw' e arquivo de rotas chamado 'ecmp_8_3links_10sw'
+	`pox/pox.py riplpox.riplpox --topo=jelly,10,3,adjList_3links_10sw --routing=jelly,ecmp_8_3links_10sw --mode=reactive`
 
 2. Abra outro terminal e execute `python generate_cmds.py [N_SWITCHES] [N_PORTS] [ADJ_LIST_FILE] [ROUTING_FILE] > [MN_SCRIPT_FILE]`
 
