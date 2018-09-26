@@ -1,10 +1,10 @@
-8_2 iperf -s &
-4_2 iperf -c 8_2 -P 8 -t 60 >> results/ecmp_8_eight_output.txt &
-7_2 iperf -s &
-9_2 iperf -c 7_2 -P 8 -t 60 >> results/ecmp_8_eight_output.txt &
+1_2 iperf -s &
+0_2 iperf -c 1_2 -P 8 -t 15 >> outputs/ecmp_8_4links_10sw.txt &
 2_2 iperf -s &
-1_2 iperf -c 2_2 -P 8 -t 60 >> results/ecmp_8_eight_output.txt &
+8_2 iperf -c 2_2 -P 8 -t 15 >> outputs/ecmp_8_4links_10sw.txt &
+6_2 iperf -s &
+9_2 iperf -c 6_2 -P 8 -t 15 >> outputs/ecmp_8_4links_10sw.txt &
+7_2 iperf -s &
+4_2 iperf -c 7_2 -P 8 -t 15 >> outputs/ecmp_8_4links_10sw.txt &
 5_2 iperf -s &
-0_2 iperf -c 5_2 -P 8 -t 60 >> results/ecmp_8_eight_output.txt &
-3_2 iperf -s &
-6_2 iperf -c 3_2 -P 8 -t 60 >> results/ecmp_8_eight_output.txt &
+3_2 iperf -c 5_2 -P 8 -t 15 >> outputs/ecmp_8_4links_10sw.txt &
