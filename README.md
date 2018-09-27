@@ -1,15 +1,18 @@
-# Experimento: JellyFish vs Fat Tree
+# Experimento: JellyFish
 ### Desenvolvido por: José Flauzino
 
-Neste repositório você encontra meus códigos para executar os experimentos que reproduzem a Figura 9 e Tabela 1 do artigo "Jellyfish: Networking Data Centers Randomly".
+Neste repositório você encontra os códigos para executar os experimentos que reproduzem a Figura 9 e Tabela 1 do artigo "Jellyfish: Networking Data Centers Randomly".
 Saiba mais sobre os objetivos e motivações na <a href="https://github.com/joseflauzino/JellyFish_vs_FatTree/wiki">Wiki do Projeto</a> 
 
+## Pré requisitos
+Os seguintes programas devem estar instalados em seu sistema:
+Git - para obter os códigos.
+Mininet - para simular a rede.
+
 ## Obtendo os códigos
-1. Verifique se em seu sistema o prgrama git já está instalado com o comando `git`. Caso apareça as informações de ajuda do git é sinal que ele está instalado, caso contrário use o comando a seguir para fazer a instalação: `sudo apt-get update && apt-get install git`.
+1. Crie ou escolha um diretório do seu sistema para armazenar os arquivos e entre neste diretório.
 
-2. Crie ou escolha um diretório do seu sistema para armazenar os arquivos e entre neste diretório.
-
-3. Faça o clone do repositório no diretório escolhido com o comando `git clone https://github.com/joseflauzino/JellyFish_vs_FatTree`.
+2. Faça o clone do repositório no diretório escolhido com o comando `git clone https://github.com/joseflauzino/JellyFish_vs_FatTree`.
 
 ## Instalação de pacotes necessários
 1. Execute `sudo bash install.sh` para instalar o Ripl e Riplpox
@@ -33,14 +36,14 @@ Para ver as soluções de principais erros que podem ocorrer acesse a página de
 
 2. Abra outro terminal e execute `python generate_cmds.py [N_SWITCHES] [N_PORTS] [ADJ_LIST_FILE] [ROUTING_FILE] > [MN_SCRIPT_FILE]`
 
-Exemplo `python generate_cmds.py 10 4 adjList_4links_10sw ecmp_8_4links_10sw > mn_script_ecmp_8_eight_flows`
-Obs.: [MN_SCRIPT_FILE] é o nome do arquivo de script Mininet que será criado ao executar o comando, portanto o arquivo não precisa existir (ele será criado).
+	Exemplo `python generate_cmds.py 10 4 adjList_4links_10sw ecmp_8_4links_10sw > mn_script_ecmp_8_eight_flows`
+	Obs.: [MN_SCRIPT_FILE] é o nome do arquivo de script Mininet que será criado ao executar o comando, portanto o arquivo não precisa existir (ele será criado).
 
 3. Inicie o Mininet com o comando `sudo mn --custom ripl/ripl/mn.py --topo jelly,[N_SWITCHES],[N_PORTS],[ADJ_LIST_FILE] --link tc --controller=remote --mac`
 
-Exemplo `sudo mn --custom ripl/ripl/mn.py --topo jelly,10,4,adjList_4links_10sw --link tc --controller=remote --mac`
+	Exemplo `sudo mn --custom ripl/ripl/mn.py --topo jelly,10,4,adjList_4links_10sw --link tc --controller=remote --mac`
 
 4. Na CLI do Mininet execute `source [MN_SCRIPT_FILE]`
-Exemplo `source mn_script_ecmp_8_eight_flows`
+	Exemplo `source mn_script_ecmp_8_eight_flows`
 
 5. O resultado estará no diretório outputs/
