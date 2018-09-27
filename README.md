@@ -20,17 +20,19 @@ Os seguintes programas devem estar instalados em seu sistema.
 ## Para reproduzir a Figura 9
 
 1. Execute `python main_jelly.py [N_SWICTHES] [N_LINKS] [N_HOSTS]`, onde [N_SWITCHES] deve ser substituido pelo número de swicthes a rede deve ter, [N_LINKS] é a quantidade de links que cada swicth deve conter e, por fim, [N_HOSTS] é a quantidade de hosts da rede.
+
 	Exemplo de comando: `python main_jelly.py 10 3 4`. Neste caso a rede criada terá 10 switches com 3 conexões cada e 4 hosts na rede.
-2. Ao término do processamento a figura estará no diretório figures/ com o nome de acordo com os parâmetros usados no comando. Por exemplo, se o comando foi idêntico ao exemplo do passo 1 o nome da figura será 10sw_3links_4hosts.png. 
+2. Ao término do processamento a figura estará no diretório figures/ com o nome de acordo com os parâmetros usados no comando. Por exemplo, se o comando foi idêntico ao exemplo do passo 1 o nome da figura será 3links_10sw.png.
 
-<img src="figures/4links_10sw.png" width="450" ></img>
+A figura a seguir representa o resultado obtido com os parâmetros dos exemplos acima. 
 
-### Possíveis erros
-Para ver as soluções de principais erros que podem ocorrer acesse a página de <a href="https://github.com/joseflauzino/JellyFish_vs_FatTree/wiki/Solu%C3%A7ao-de-Poss%C3%ADveis-Erros">Solução de Possíveis Erros</a> na wiki do projeto.
+<img src="figures/3links_10sw.png" width="500" ></img>
+
+> Para ver as soluções de principais erros que podem ocorrer acesse a página de <a href="https://github.com/joseflauzino/JellyFish_vs_FatTree/wiki/Solu%C3%A7ao-de-Poss%C3%ADveis-Erros">Solução de Possíveis Erros</a> na wiki do projeto.
 
 ## Para reproduzir a Tabela 1
 
-Essa tabela é composta por vários testes.
+Essa tabela é composta por vários testes. Portano, visando uma maior clareza, os testes foram separados em duas partes: com a topologia Jellyfish e com a Fat-Tree. Isso porque os passos são diferentes, já que os próximos testes da Jellyfish utilizam dados criados durante o experimento da Figura 9.
 
 ### Testes com a Jellyfish:
 
