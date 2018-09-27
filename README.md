@@ -5,7 +5,7 @@ Neste repositório você encontra os códigos para executar os experimentos que 
 Saiba mais sobre os objetivos e motivações na <a href="https://github.com/joseflauzino/JellyFish_vs_FatTree/wiki">Wiki do Projeto</a> 
 
 ## Pré requisitos
-Os seguintes programas devem estar instalados em seu sistema:
+Os seguintes programas devem estar instalados em seu sistema.
 Git - para obter os códigos.
 Mininet - para simular a rede.
 
