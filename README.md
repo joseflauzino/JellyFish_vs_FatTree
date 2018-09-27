@@ -6,8 +6,8 @@ Saiba mais sobre os objetivos e motivações na <a href="https://github.com/jose
 
 ## Pré requisitos
 Os seguintes programas devem estar instalados em seu sistema.
-Git - para obter os códigos.
-Mininet - para simular a rede.
+* Git - para obter os códigos.
+* Mininet - para simular a rede.
 
 ## Obtendo os códigos
 1. Crie ou escolha um diretório do seu sistema para armazenar os arquivos e entre neste diretório.
