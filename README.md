@@ -56,10 +56,14 @@ Essa tabela é composta por vários testes.
 ### Testes com a Fat-Tree:
 
 1. Execute `python main_fat.py [N_PODS]`.
+
 	Exemplo `python main_fat.py 4`.
 2. Execute `python pox/pox.py DCController --topo=ft,[N_PODS] --routing='[ROUTE_PROTO]'`
+
 	Exemplo `python pox/pox.py DCController --topo=ft,8 --routing='ECMP'`
 3. Abra outro terminal e inicie o Mininet com o comando `mn --custom ripl/ripl/mn.py --topo ft,[N_PODS] --controller=remote --mac --link tc,bw=10,delay=10ms`
+
 	Exemplo `mn --custom ripl/ripl/mn.py --topo ft,5 --controller=remote --mac --link tc,bw=10,delay=10ms`
 4. Na CLI do Mininet execute `source [MN_SCRIPT_FILE]`.
+
 	Exemplo ...
