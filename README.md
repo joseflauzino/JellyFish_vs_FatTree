@@ -32,7 +32,7 @@ A figura a seguir representa o resultado obtido com os parâmetros dos exemplos 
 
 ## Para reproduzir a Tabela 1
 
-Essa tabela é composta por vários testes. Assim, visando uma maior clareza, os testes foram separados em duas partes: com a topologia Jellyfish e com a Fat-Tree. Isso porque os passos são diferentes, já que os próximos testes da Jellyfish utilizam dados criados durante o experimento da Figura 9.
+Essa tabela é composta por vários testes. Assim, visando maior clareza, os testes foram separados em duas partes: com a topologia Jellyfish e com a Fat-Tree. Isso porque os passos são diferentes, já que os próximos testes da Jellyfish utilizam dados criados durante o experimento da Figura 9.
 
 ### Testes com a Jellyfish:
 
@@ -57,15 +57,18 @@ Essa tabela é composta por vários testes. Assim, visando uma maior clareza, os
 
 ### Testes com a Fat-Tree:
 
-1. Execute `python main_fat.py [N_PODS]`.
+1. Execute `python main_fat.py [N_PODS]`
 
-	Exemplo `python main_fat.py 4`.
+	Exemplo `python main_fat.py 4`
 2. Execute `python pox/pox.py DCController --topo=ft,[N_PODS] --routing='[ROUTE_PROTO]'`
 
 	Exemplo `python pox/pox.py DCController --topo=ft,8 --routing='ECMP'`
 3. Abra outro terminal e inicie o Mininet com o comando `mn --custom ripl/ripl/mn.py --topo ft,[N_PODS] --controller=remote --mac --link tc,bw=10,delay=10ms`
 
 	Exemplo `mn --custom ripl/ripl/mn.py --topo ft,5 --controller=remote --mac --link tc,bw=10,delay=10ms`
-4. Na CLI do Mininet execute `source [MN_SCRIPT_FILE]`.
 
-	Exemplo ...
+4. Na CLI do Mininet execute `source [MN_SCRIPT_FILE]`
+
+	Exemplo `source fat_mn_script_ecmp_8flows`
+
+5. O resultado estará no diretório outputs/fat.

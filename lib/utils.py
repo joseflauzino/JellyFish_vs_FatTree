@@ -25,7 +25,6 @@ def create_routing_table(paths_file_name, numSwitches):
 		    if src_dst_pair not in table[str(currentNode)]:
 			table[str(currentNode)][src_dst_pair] = {}
 		    table[str(currentNode)][src_dst_pair][str(pathId)] = str(nextHop)
-		#same but for the reverse direction
 		for j in range(len(path)-1, 0, -1):
 		    nextHop = path[j-1]
 		    currentNode = path[j]
@@ -33,7 +32,6 @@ def create_routing_table(paths_file_name, numSwitches):
 		    if dst_src_pair not in table[str(currentNode)]:
                         table[str(currentNode)][dst_src_pair] = {}
                     table[str(currentNode)][dst_src_pair][str(pathId)] = str(nextHop)
-	    
 	return table
 
 def transform_paths_dpid(paths_file_name, numSwitches, maxLen):
