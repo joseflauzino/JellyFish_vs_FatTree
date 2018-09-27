@@ -28,11 +28,11 @@ A figura a seguir representa o resultado obtido com os parâmetros dos exemplos 
 
 <img src="figures/3links_10sw.png" width="500" ></img>
 
-> Para ver as soluções de principais erros que podem ocorrer acesse a página de <a href="https://github.com/joseflauzino/JellyFish_vs_FatTree/wiki/Solu%C3%A7ao-de-Poss%C3%ADveis-Erros">Solução de Possíveis Erros</a> na wiki do projeto.
+> Para ver as soluções de principais erros que podem ocorrer acesse a página de <a href="https://github.com/joseflauzino/JellyFish_vs_FatTree/wiki/Solu%C3%A7ao-de-Poss%C3%ADveis-Erros">Solução de Possíveis Erros</a> na Wiki do projeto.
 
 ## Para reproduzir a Tabela 1
 
-Essa tabela é composta por vários testes. Portano, visando uma maior clareza, os testes foram separados em duas partes: com a topologia Jellyfish e com a Fat-Tree. Isso porque os passos são diferentes, já que os próximos testes da Jellyfish utilizam dados criados durante o experimento da Figura 9.
+Essa tabela é composta por vários testes. Assim, visando uma maior clareza, os testes foram separados em duas partes: com a topologia Jellyfish e com a Fat-Tree. Isso porque os passos são diferentes, já que os próximos testes da Jellyfish utilizam dados criados durante o experimento da Figura 9.
 
 ### Testes com a Jellyfish:
 
