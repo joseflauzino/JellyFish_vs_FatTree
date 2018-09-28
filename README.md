@@ -32,26 +32,30 @@ A figura a seguir representa o resultado obtido com os parâmetros dos exemplos 
 
 ## Para reproduzir a Tabela 1
 
-Essa tabela é composta por vários testes. Assim, visando maior clareza, os testes foram separados em duas partes: com a topologia Jellyfish e com a Fat-Tree. Isso porque os passos são diferentes, já que os próximos testes da Jellyfish utilizam dados criados durante o experimento da Figura 9.
+Essa tabela é composta por dados obtidos através de vários testes. Assim, visando maior clareza, os testes foram separados em duas partes: com a topologia Jellyfish e com a Fat-Tree. Isso porque os passos são diferentes, já que os próximos testes da Jellyfish utilizam dados criados durante o experimento da Figura 9.
 
 ### Testes com a Jellyfish:
 
 1. Execute o seguinte comando: `pox/pox.py riplpox.riplpox --topo=jelly,[N_SWITCHES],[N_PORTS],[ADJ_LIST_FILE] --routing=[TOPOLOGY],[ROUTING_FILE] --mode=reactive`
 
-	Exemplo de comando para 10 switches com 3 portas cada, lista de adjacencia chamada 'adjList_3links_10sw' e arquivo de rotas chamado 'ecmp_3links_10sw_8flows'
-	`pox/pox.py riplpox.riplpox --topo=jelly,10,3,adjList_3links_10sw --routing=jelly,ecmp_3links_10sw_8flows --mode=reactive`
+	Exemplo de comando para 10 switches com 3 portas cada, lista de adjacencia chamada 'adjList_3links_10sw' e arquivo de rotas chamado 'ecmp_3links_10sw.pkl'
+	`pox/pox.py riplpox.riplpox --topo=jelly,10,3,adjList_3links_10sw --routing=jelly,ecmp_3links_10sw --mode=reactive`
 
-2. Abra outro terminal e execute `python generate_cmds_jelly.py [N_SWITCHES] [N_PORTS] [ADJ_LIST_FILE] [ROUTING_FILE] > [MN_SCRIPT_FILE]`
+2. Abra outro terminal, entre novamente no diretório git e execute `python generate_cmds_jelly.py [N_SWITCHES] [N_PORTS] [N_FLOWS] [ADJ_LIST_FILE] [ROUTING_FILE] > [MN_SCRIPT_FILE]`
 
-	Exemplo `python generate_cmds_jelly.py 10 3 adjList_3links_10sw ecmp_3links_10sw_8flows > mn_script_ecmp_8flows`
-	Obs.: [MN_SCRIPT_FILE] é o nome do arquivo de script Mininet que será criado ao executar o comando, portanto o arquivo não precisa existir (ele será criado).
+	Exemplo `python generate_cmds_jelly.py 10 3 8 adjList_3links_10sw ecmp_3links_10sw > jelly_mn_script_ecmp_8flows`
+
+	> Nota: [N_FLOWS] representa a quantidade de fluxos TCP que será utilizado nos testes, no exemplo são 8 fluxos.
+
+	> Nota: [MN_SCRIPT_FILE] é o nome do arquivo de script Mininet que será criado ao executar o comando, portanto o arquivo não precisa existir (ele será criado).
 
 3. Inicie o Mininet com o comando `sudo mn --custom ripl/ripl/mn.py --topo jelly,[N_SWITCHES],[N_PORTS],[ADJ_LIST_FILE] --link tc --controller=remote --mac`
 
 	Exemplo `sudo mn --custom ripl/ripl/mn.py --topo jelly,10,3,adjList_3links_10sw --link tc --controller=remote --mac`
 
 4. Na CLI do Mininet execute `source [MN_SCRIPT_FILE]`.
-	Exemplo `source mn_script_ecmp_8flows`
+
+	Exemplo `source jelly_mn_script_ecmp_8flows`
 
 5. O resultado estará no diretório outputs/jelly.
 
