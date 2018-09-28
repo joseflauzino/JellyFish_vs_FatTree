@@ -66,13 +66,18 @@ Essa tabela é composta por dados obtidos através de vários testes. Assim, vis
 	Exemplo `python main_fat.py 4`
 2. Execute `python pox/pox.py DCController --topo=ft,[N_PODS] --routing='[ROUTE_PROTO]'`
 
-	Exemplo `python pox/pox.py DCController --topo=ft,8 --routing='ECMP'`
-3. Abra outro terminal e inicie o Mininet com o comando `mn --custom ripl/ripl/mn.py --topo ft,[N_PODS] --controller=remote --mac --link tc,bw=10,delay=10ms`
+	Exemplo `python pox/pox.py DCController --topo=ft,4 --routing='ECMP'`
 
-	Exemplo `mn --custom ripl/ripl/mn.py --topo ft,5 --controller=remote --mac --link tc,bw=10,delay=10ms`
+3. Abra outro terminal e execute `python generate_cmds_fat.py [N_PODS] > [MN_SCRIPT_FILE]`
 
-4. Na CLI do Mininet execute `source [MN_SCRIPT_FILE]`
+	Exemplo `python generate_cmds_fat.py 4 > fat_mn_script_ecmp_8flows`
+
+4. Inicie o Mininet com o comando `mn --custom ripl/ripl/mn.py --topo ft,[N_PODS] --controller=remote --mac --link tc,bw=10,delay=10ms`
+
+	Exemplo `mn --custom ripl/ripl/mn.py --topo ft,4 --controller=remote --mac --link tc,bw=10,delay=10ms`
+
+5. Na CLI do Mininet execute `source [MN_SCRIPT_FILE]`
 
 	Exemplo `source fat_mn_script_ecmp_8flows`
 
-5. O resultado estará no diretório outputs/fat.
+6. O resultado estará no diretório outputs/fat.
