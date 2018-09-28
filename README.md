@@ -61,23 +61,20 @@ Essa tabela é composta por dados obtidos através de vários testes. Assim, vis
 
 ### Testes com a Fat-Tree:
 
-1. Execute `python main_fat.py [N_PODS]`
-
-	Exemplo `python main_fat.py 4`
-2. Execute `python pox/pox.py DCController --topo=ft,[N_PODS] --routing='[ROUTE_PROTO]'`
+1. Execute `python pox/pox.py DCController --topo=ft,[N_PODS] --routing='[ROUTE_PROTO]'`
 
 	Exemplo `python pox/pox.py DCController --topo=ft,4 --routing='ECMP'`
 
-3. Abra outro terminal e execute `python generate_cmds_fat.py [N_PODS] > [MN_SCRIPT_FILE]`
+2. Abra outro terminal e execute `python generate_cmds_fat.py [N_PODS] [N_FLOWS] > [MN_SCRIPT_FILE]`
 
-	Exemplo `python generate_cmds_fat.py 4 > fat_mn_script_ecmp_8flows`
+	Exemplo `python generate_cmds_fat.py 4 8 > fat_mn_script_ecmp_8flows`
 
-4. Inicie o Mininet com o comando `mn --custom ripl/ripl/mn.py --topo ft,[N_PODS] --controller=remote --mac --link tc,bw=10,delay=10ms`
+3. Inicie o Mininet com o comando `mn --custom ripl/ripl/mn.py --topo ft,[N_PODS] --controller=remote --mac --link tc,bw=10,delay=10ms`
 
 	Exemplo `mn --custom ripl/ripl/mn.py --topo ft,4 --controller=remote --mac --link tc,bw=10,delay=10ms`
 
-5. Na CLI do Mininet execute `source [MN_SCRIPT_FILE]`
+4. Na CLI do Mininet execute `source [MN_SCRIPT_FILE]`
 
 	Exemplo `source fat_mn_script_ecmp_8flows`
 
-6. O resultado estará no diretório outputs/fat.
+5. O resultado estará no diretório outputs/fat.
