@@ -1,0 +1,10 @@
+4_2 iperf -s &
+3_2 iperf -c 4_2 -P 8 -t 15 >> outputs/jelly/ecmp_3links_10sw_8flows.txt &
+2_2 iperf -s &
+5_2 iperf -c 2_2 -P 8 -t 15 >> outputs/jelly/ecmp_3links_10sw_8flows.txt &
+0_2 iperf -s &
+7_2 iperf -c 0_2 -P 8 -t 15 >> outputs/jelly/ecmp_3links_10sw_8flows.txt &
+8_2 iperf -s &
+6_2 iperf -c 8_2 -P 8 -t 15 >> outputs/jelly/ecmp_3links_10sw_8flows.txt &
+9_2 iperf -s &
+1_2 iperf -c 9_2 -P 8 -t 15 >> outputs/jelly/ecmp_3links_10sw_8flows.txt &
